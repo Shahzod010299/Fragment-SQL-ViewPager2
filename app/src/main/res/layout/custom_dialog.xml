@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="edit User"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24dp"/>
+
+      <TextView
+        android:id="@+id/text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="user id = 1"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:hint="name"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:boxStrokeWidthFocused="0dp"
+        app:counterMaxLength="10"
+        app:endIconTint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_person_24"
+        app:startIconTint="@color/white"
+        android:textColorHint="#BEFFFFFF"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_name_new"
+            android:layout_width="300dp"
+            android:background="@drawable/bg_edit_text"
+            android:imeOptions="flagNoFullscreen"
+            android:textColorHighlight="@color/white"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        android:hint="name"
+        app:endIconMode="password_toggle"
+        app:counterEnabled="true"
+        app:boxStrokeWidthFocused="0dp"
+        app:counterMaxLength="10"
+        app:endIconTint="@color/white"
+        app:startIconDrawable="@drawable/ic_baseline_key_24"
+        app:startIconTint="@color/white"
+        android:textColorHint="#BEFFFFFF"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_password_new"
+            android:layout_width="300dp"
+            android:background="@drawable/bg_edit_text"
+            android:imeOptions="flagNoFullscreen"
+            android:textColorHighlight="@color/white"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_cancele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bekor qilish"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="12dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#F44336"/>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="O'zgartish"
+        android:paddingVertical="12dp"
+        android:layout_marginTop="12dp"
+        android:textAllCaps="false"
+        android:backgroundTint="#7FBD37"/>
+
+
+</LinearLayout>
